@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #2c383e;
+}
+#header embed{
+	display: block;
+	height: 323px;
+	width: 867px;
+	margin: 0 auto;
+}
+/*******************导航栏开始********************/
+#nav{
+	height: 51px;
+	width: 867px;
+	background: #194866;
+	margin: 0 auto;
+}
+#dh{
+	list-style: none;
+	overflow: hidden;
+}
+#dh .main-menu{
+	display: block;
+	height: 100%;
+	width: 100%;
+	color: white;
+	font-size: 10px;
+	text-decoration: none;
+}
+#dh li{
+	float: left;
+	height: 51px;
+	width: 123.8px;
+	text-align: center;
+	line-height: 51px;
+	position: relative;
+	margin-left: -1px;
+	background: url(../images/linkr.gif) no-repeat 100% 15px;
+}
+#dh .hts{
+	background: none;
+}
+#dh .main-menu:hover{
+	color: yellow;
+	text-decoration: underline;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/*********************导航栏结束********************/
+#footer{
+	height: 110px;
+	width: 867px;
+	margin: 0 auto;
+	position: relative;
+}
+#footer img{
+	vertical-align: bottom;display: block;
+}
+#lastf{
+	width: 867px;
+	height: 45px;
+	vertical-align: bottom;display: block;
+}
+#footerwz{
+	width: 867px;
+	height: 24px;
+	background: #4a5960;
+	position: relative;
+}
+#footerwz p{
+	font-family: Tahoma;
+	color: white;
+	font-size: 10px;
+	float: right;
+	margin-right: 10px;
+	margin-top: 8px;
+}

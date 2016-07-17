@@ -1,0 +1,164 @@
+#content{
+	height: 490px;
+	width: 867px;
+	margin: 0 auto;
+	background: #fff;
+	position: relative;
+}
+/**************sidebar开始***************/
+#sidebar{
+	height: 490px;
+	width: 251px;
+	background: #fff url(../images/weline.gif) no-repeat 100% 55px;
+	float: left;
+	clear: both;
+	position: relative;
+}
+#simg{
+	position: relative;
+}
+#s1{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+#s2{
+	margin-left: 16px;
+	margin-top: -3px;
+}
+#sideul{
+	margin-left: 20px;
+	margin-top: 8px;
+}
+#sul{
+	list-style: none;
+}
+#sul li{
+	color: gray;
+	font-size: 8px;
+	line-height: 21px;
+}
+.more{
+	width: 100px;
+	height: 20px;
+	display: block;
+	background: url(../images/more.gif) no-repeat 0 5px;
+}
+#hx{
+	width: 180px;
+	height: 20px;
+	background: url(../images/111.jpg) repeat-x 0 10px;
+}
+/**************sidebar结束***************/
+/****************news开始****************/
+#news{
+	height: 300px;
+	width: 313px;
+	background: #fff;
+	float: left;
+	position: relative;
+}
+#n1{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+#nul{
+	list-style: none;
+	margin-left: 20px;
+	background: #fff url(../images/weline.gif) no-repeat 100% 0px;
+}
+#nul li{
+	font-size: 10px;
+	line-height: 20px;
+	text-indent: 15px;
+	position: relative;
+}
+.cheng{
+	color: orange;
+	font-weight: bold;
+	background: url(../images/ico.gif) no-repeat 0 center;
+}
+.nmore{
+	width: 100px;
+	height: 20px;
+	display: block;
+	background: url(../images/more.gif) no-repeat 15px 5px;
+}
+.hui{
+	color: gray;
+}
+/****************news结束****************/
+/****************about开始****************/
+#about{
+	height: 300px;
+	width: 303px;
+	background: #fff;
+	float: left;
+	position: relative;
+}
+#aboutimg{
+	position: relative;
+}
+#a1{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+#a2{
+	margin-left: 15px;
+}
+#about p{
+	font-size: 8px;
+	color: gray;
+	line-height: 20px;
+	margin-left: 20px;
+	margin-right: 40px;
+	margin-top: 5px;
+	position: relative;
+}
+.amore{
+	width: 100px;
+	height: 20px;
+	display: block;
+	background: url(../images/more.gif) no-repeat 20px 5px;
+}
+#aul{
+	list-style: none;
+}
+/****************about结束****************/
+/****************estate开始****************/
+#estate{
+	height: 190px;
+	width: 616px;
+	background: #fff;
+	position: absolute;
+	margin-left: 251px;
+	margin-top: 300px;
+}
+#e1{
+	display: block;
+	height: 1px;
+	width: 540px;
+	margin: 0 auto;
+}
+#img2{
+	position: relative;
+	float: left;
+	margin-left: 30px;
+	margin-top: 15px;
+}
+#img3{
+	margin-top: 20px;
+	margin-left:294px; 
+}
+#img3 p{
+	color: gray;
+	font-size: 8px;
+	line-height: 15px;
+	margin-right: 40px;
+}
+.nmore{
+	background: url(../images/more.gif) no-repeat 0 10px;
+}
+#eul{
+	list-style: none;
+}
+/****************estate结束****************/

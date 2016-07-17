@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>灵魂回响</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+	function tab(btnf,btntag,conf,contag){
+		var fbtn=document.getElementById(btnf);	
+		var btn=fbtn.getElementsByTagName(btntag);
+		var fcon=document.getElementById(conf);
+		var con=fcon.getElementsByTagName(contag);
+		
+		for(var i=0;i<btn.length;i++){
+			btn[i].index=i;
+			btn[i].onclick=function(){
+				for(var j=0;j<btn.length;j++){
+					btn[j].className='';
+					con[j].className='clearfix';
+				}				
+				this.className='active';
+				con[this.index].className='clearfix show';
+			}			
+		}
+	}
+	
+	
+	
+	
+	window.onload=function(){
+		tab('zhbtn','li','zhcon','li');
+		tab('newsbtn','li','newscon','div');
+		tab('zybtn','li','zycon','a')
+	}
+	
+	$(function(){
+		$('.nav li').hover(function(){
+			$(this).find('.navbtnh').hide();
+			$(this).find('.nav_con').stop().fadeIn();
+		},function(){
+			$(this).find('.navbtnh').show();
+			$(this).find('.nav_con').stop().hide();	
+		})
+		
+		$('#hdlist li').hover(function(){
+			$('#hdlist li').removeClass('show_div');
+			$(this).addClass(' show_div');
+		})	 
+	})
+
+</script>
+</head>
+
+
+<body>
+<div class="top_box">
+    <div class="top clearfix">
+        <h1>
+            <a href="#">畅游</a>
+        </h1>
+        <ul class="top_list clearfix">
+            <li class="list1">
+                <a href="#" class="rg"><i></i><span>注册</span></a>
+                <a href="#" class="cz"><i></i><span>充值</span></a>
+                <a href="#" class="cy"><i></i><span>畅游+</span></a>
+            </li>
+            <li class="listnone">
+                <a href="#">
+                    <span>
+                        客服
+                    </span>
+                    <i></i>
+                </a>
+            </li>
+            <li class="listnone">
+                <a href="#">
+                    <span>
+                        畅游全服务
+                    </span>
+                    <i></i>
+                </a>
+            </li>
+            <li class="listnone">
+                <a href="#">
+                    <span>
+                        畅游全游戏
+                    </span>
+                    <i></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="con_box">
+    <div class="ban_nav">
+    	<div class="logo_nav clearfix">
+        	<h2>
+            	<a href="#">灵魂回响</a>
+            </h2>
+        	<ul class="nav">
+            	<li class="home_a">
+                	<a href="#" class="navbtn"></a>
+                </li>
+                <li class="">
+                	<a href="#" class="navbtn navbtnh"></a>
+                    <div class="nav_con">
+                    	<p><a href="#">游戏新闻</a></p>
+                        <p><a href="#">官方公告</a></p>
+                    </div>
+                </li>
+                <li>
+                	<a href="#" class="navbtn"></a>
+                </li>
+                <li>
+                	<a href="#" class="navbtn"></a>
+                </li>
+                <li>
+                	<a href="#" class="navbtn"></a>
+                </li>
+                <li>
+                	<a href="#" class="navbtn"></a>
+                </li>
+                <li>
+                	<a href="#" class="navbtn"></a>
+                </li>
+                <li class="nomar">
+                	<a href="#" class="navbtn"></a>
+                </li>
+                <li class="w_81">
+                	<a href="#" class="navbtn"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="zonghequ clearfix">
+    	<div class="zhq_l">
+    		<ul class="zhq_down_l clearfix">
+            	<li>
+                	<a href="#" class="gamedown"></a>
+                </li>
+                <li>
+                	<a href="#" class="zhanghaozc"></a>
+                </li>
+                <li>
+                	<a href="#" class="zhanghaocz"></a>
+                </li>
+                <li>
+                	<a href="#" class="duihuan"></a>
+                </li>
+                <li>
+                	<a href="#" class="xinshou"></a>
+                </li>
+            </ul>
+            <div class="zhq_l_roll">
+            	<ul class="zhq_l_roll_con" id="zhcon">
+                	<li class="show">
+                        <a href="#">
+                            <img src="img/main_a1 (1).jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/2.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/main_a1 (1).jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/2.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/main_a1 (1).jpg" />
+                        </a>
+                    </li>
+                </ul>
+            	<ul class="roll_btn" id="zhbtn">
+                	<li class="active"><a href="#"></a></li>
+                    <li><a href="javascript:;"></a></li>
+                    <li><a href="javascript:;"></a></li>
+                    <li><a href="javascript:;"></a></li>
+                    <li><a href="javascript:;"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="zhq_r">
+        	<div class="zhq_fwq">
+            	<p>电信一区<span>【元素殿堂】</span>欢迎进驻</p>
+                <p>电信一区<span>【元素殿堂】</span>欢迎进驻</p>
+            </div>
+            <div class="news_list_box">
+            	<div class="news_list_top clearfix">
+            		<p class="new_p1">距您上次访问有<a href="#">200</a>条更新</p>
+            		<i></i>
+                    <p class="new_p2 clearfix">
+                    	<span>关注：</span>
+                    	<a href="#"></a>
+                        <a href="#"></a>
+                    	<a href="#"></a>
+                    </p>
+            	</div>
+                <div class="news_list">
+                	<ul class="news_list_btn clearfix" id="newsbtn">
+                    	<li class="active"><a href="javascript:;" class="news_btn1">综合</a></li>
+                        <li><a href="javascript:;" class="news_btn2">新闻</a></li>
+                        <li><a href="javascript:;" class="news_btn3">公告</a></li>
+                        <li><a href="javascript:;" class="news_btn4">媒体</a></li>
+                    </ul>  
+                    <div class="news_list_con" id="newscon">
+                    	<div class="show">
+                        	<p>
+                            	<a href="#">4月8日大版本开启 新职业术士魔神天降</a>
+                            </p>
+                            <ul>
+                            	<li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="news_more">更多信息&gt;</a>
+                        </div>
+                        <div class="">
+                        	<p>
+                            	<a href="#">4月8日大版本开启 新职业术士魔神天降</a>
+                            </p>
+                            <ul>
+                            	<li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="news_more">更多信息&gt;</a>
+                        </div>
+                        <div class="">
+                        	<p>
+                            	<a href="#">4月8日大版本开启 新职业术士魔神天降</a>
+                            </p>
+                            <ul>
+                            	<li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="news_more">更多信息&gt;</a>
+                        </div>
+                        <div class="">
+                        	<p>
+                            	<a href="#">4月8日大版本开启 新职业术士魔神天降</a>
+                            </p>
+                            <ul>
+                            	<li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                    	<span>【新闻】 两大满级副特色两大满级副本特色</span>
+                                        <i>03/24</i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="news_more">更多信息&gt;</a>
+                        </div>
+                    </div>              
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ads">
+        <ul class="clearfix">
+            <li>
+                <a href="#">
+                    <img src="img/adimg1.jpg"/>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/adimg1.jpg"/>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/adimg1.jpg"/>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/adimg1.jpg"/>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="js_hd clearfix">
+    	<div class="zyjs">
+        	<ul class="zyjs_btn clearfix" id="zybtn">
+            	<li class="active"><a href="javascript:;"" class="zyjs_btn1"></a></li>
+                <li><a href="javascript:;" class="zyjs_btn2"></a></li>
+                <li><a href="javascript:;" class="zyjs_btn3"></a></li>
+                <li><a href="javascript:;" class="zyjs_btn4"></a></li>
+                <li><a href="javascript:;" class="zyjs_btn5"></a></li>
+                <li><a href="javascript:;" class="zyjs_btn6"></a></li>
+            </ul>
+        	<div class="zyjs_con" id="zycon">
+            	<a href="#" class="show">
+                	<img src="img/shushi.jpg" />
+            	</a>
+                <a href="#">
+                	<img src="img/shenshe.jpg" />
+            	</a>
+                <a href="#">
+                	<img src="img/shouhu.jpg" />
+            	</a>
+                <a href="#">
+                	<img src="img/mofa.jpg" />
+            	</a>
+                <a href="#">
+                	<img src="img/zhanshi.jpg" />
+            	</a>
+                <a href="#">
+                	<img src="img/cike.jpg" />
+            	</a>
+            </div>
+        </div>
+    	<div class="huodong">
+        	<h4 class="hd_tit">
+            	活动中心
+            </h4>
+            <ul class="hd_list" id="hdlist">
+            	<li class="clearfix  show_div">
+                	<a href="#" class="hd_list_a">
+                    	<span>
+                        	神谕者的成长
+                        </span>
+                    	<i>
+                        	进行中
+                        </i>
+                    </a>
+                    <div class="hd_ad">
+                        <a href="#">
+                            <img src="img/1.jpg" />
+                            <div class="hd_ad_zz">
+                                <p class="hd_p1">女武神的秘宝</p>
+                                <p class="hd_p2">共一大堆一大堆的人关注</p>
+                            </div>                
+                        </a>
+                    </div>                    
+                </li>
+                <li class="clearfix">
+                	<a href="#" class="hd_list_a">
+                    	<span>
+                        	神谕者的成长
+                        </span>
+                    	<i>
+                        	进行中
+                        </i>
+                    </a>
+                    <div class="hd_ad">
+                        <a href="#">
+                            <img src="img/1.jpg" />
+                            <div class="hd_ad_zz">
+                                <p class="hd_p1">女武神的秘宝</p>
+                                <p class="hd_p2">共一大堆一大堆的人关注</p>
+                            </div>                
+                        </a>
+                    </div> 
+                </li>
+                <li class="clearfix">
+                	<a href="#" class="hd_list_a">
+                    	<span>
+                        	神谕者的成长
+                        </span>
+                    	<i>
+                        	进行中
+                        </i>
+                    </a>
+                    <div class="hd_ad">
+                        <a href="#">
+                            <img src="img/1.jpg" />
+                            <div class="hd_ad_zz">
+                                <p class="hd_p1">女武神的秘宝</p>
+                                <p class="hd_p2">共一大堆一大堆的人关注</p>
+                            </div>                
+                        </a>
+                    </div> 
+                </li>
+                <li class="clearfix">
+                	<a href="#" class="hd_list_a">
+                    	<span>
+                        	神谕者的成长
+                        </span>
+                    	<i>
+                        	进行中
+                        </i>
+                    </a>
+                    <div class="hd_ad">
+                        <a href="#">
+                            <img src="img/1.jpg" />
+                            <div class="hd_ad_zz">
+                                <p class="hd_p1">女武神的秘宝</p>
+                                <p class="hd_p2">共一大堆一大堆的人关注</p>
+                            </div>                
+                        </a>
+                    </div> 
+                </li>
+                <li class="clearfix">
+                	<a href="#" class="hd_list_a">
+                    	<span>
+                        	神谕者的成长
+                        </span>
+                    	<i>
+                        	进行中
+                        </i>
+                    </a>
+                    <div class="hd_ad">
+                        <a href="#">
+                            <img src="img/1.jpg" />
+                            <div class="hd_ad_zz">
+                                <p class="hd_p1">女武神的秘宝</p>
+                                <p class="hd_p2">共一大堆一大堆的人关注</p>
+                            </div>                
+                        </a>
+                    </div> 
+                </li>
+                <li class="clearfix">
+                	<a href="#" class="hd_list_a">
+                    	<span>
+                        	神谕者的成长
+                        </span>
+                    	<i>
+                        	进行中
+                        </i>
+                    </a>
+                    <div class="hd_ad">
+                        <a href="#">
+                            <img src="img/1.jpg" />
+                            <div class="hd_ad_zz">
+                                <p class="hd_p1">女武神的秘宝</p>
+                                <p class="hd_p2">共一大堆一大堆的人关注</p>
+                            </div>                
+                        </a>
+                    </div> 
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="meiti clearfix">
+    	<div class="meiti_l">
+        	<div class="meiti_l1">
+        		<h4>
+                	快捷入口
+                </h4>
+                <ul>
+                	<li><a href="#">账号管理</a></li>
+                    <li><a href="#">账号管理</a></li>
+                    <li><a href="#">账号管理</a></li>
+                    <li><a href="#">账号管理</a></li>
+                    <li><a href="#">账号管理</a></li>
+                    <li><a href="#">账号管理</a></li>
+                    <li><a href="#">账号管理</a></li>
+                    <li><a href="#">账号管理</a></li>
+                </ul>
+        	</div>
+            <div class="meiti_l_ad">
+            	<a href="#">
+                	<img src="img/meitiad.jpg"	/>
+                </a>
+            </div>
+            <div class="meitihezuo">
+            	<a href="#">媒体合作专区</a>
+            </div>
+            
+            <div class="diaocha">
+            	<a href="#">
+                </a>
+            </div>
+        </div>    
+        <div class="meiti_c">
+        	<div class="meiti_c_g">
+            	<h4>玩家交流</h4>
+                <div class="meit_c_tit clearfix">
+                    <ul>
+                        <li><a href="#">玩家攻略</a></li>
+                        <li><a href="#">玩家攻略</a></li>
+                        <li><a href="#">玩家攻略</a></li>
+                    </ul>
+                    <a href="#" class="meit_c_more">更多信息&gt;</a>
+                </div>
+                <div class="meiti_c_conbox">
+                	<div class="meiti_c_con">
+                    	<a href="#" class="c_con_img">
+                        	<img src="img/gonglve.jpg" />
+                        </a>
+                        <ul>
+                        	<li><a href="#">生活技能直接啊接收到了空间</a></li>
+                            <li><a href="#">生活技能直接啊接收到了空间</a></li>
+                            <li><a href="#">生活技能直接啊接收到了空间</a></li>
+                            <li><a href="#">生活技能直接啊接收到了空间</a></li>
+                            <li><a href="#">生活技能直接啊接收到了空间</a></li>
+                        </ul>
+                    </div>                
+                </div>
+            </div>
+            <div class="meiti_c_g">
+            	<h4>玩家交流</h4>
+                <div class="meit_c_tit clearfix">
+                    <ul>
+                        <li><a href="#">玩家攻略</a></li>
+                        <li><a href="#">玩家攻略</a></li>
+                        <li><a href="#">玩家攻略</a></li>
+                    </ul>
+                    <a href="#" class="meit_c_more">更多信息&gt;</a>
+                </div>
+                <div class="meiti_c_conbox">
+                	<div class="meiti_c_con">
+                    	<a href="#" class="c_con_img">
+                        	<img src="img/gonglve.jpg" />
+                        </a>
+                        <ul>
+                        	<li><a href="#">生活技能直接啊接收到了空间</a></li>
+                            <li><a href="#">生活技能直接啊接收到了空间</a></li>
+                            <li><a href="#">生活技能直接啊接收到了空间</a></li>
+                            <li><a href="#">生活技能直接啊接收到了空间</a></li>
+                            <li><a href="#">生活技能直接啊接收到了空间</a></li>
+                        </ul>
+                    </div>                
+                </div>
+            </div>
+        </div>
+        <div class="meit_r">
+        	<h4>游戏资料</h4>
+            <div class="meit_r_box">
+            	<ul>
+                	<li>
+                    	<span>新手入门<em></em></span>
+                        <a href="#">账号注册</a>
+                        <i></i>
+                        <a href="#">账号注册</a>
+                        <i></i>
+                        <a href="#">账号注册</a>
+                    </li>
+                    <li>
+                    	<span>新手入门<em></em></span>
+                        <a href="#">账号注册</a>
+                        <i></i>
+                        <a href="#">账号注册</a>
+                        <i></i>
+                        <a href="#">账号注册</a>
+                    </li>
+                    <li>
+                    	<span>新手入门<em></em></span>
+                        <a href="#">账号注册</a>
+                        <i></i>
+                        <a href="#">账号注册</a>
+                        <i></i>
+                        <a href="#">账号注册</a>
+                    </li>
+                    <li class="noborder">
+                    	<span>新手入门<em></em></span>
+                        <a href="#">账号注册</a>
+                        <i></i>
+                        <a href="#">账号注册</a>
+                        <i></i>
+                        <a href="#">账号注册</a>
+                    </li>
+                </ul> 
+                <p><a href="#">进入资料站</a></p>           
+            </div>
+            <div class="meiti_c_g w_322">
+            	<h4>玩家交流</h4>
+                <div class="meit_c_tit clearfix">
+                    <ul>
+                        <li><a href="#">玩家攻略</a></li>
+                        <li><a href="#">玩家攻略</a></li>
+                    </ul>
+                    <a href="#" class="meit_c_more">更多信息&gt;</a>
+                </div>
+                <div class="meiti_r_conbox">
+                	<ul>
+                    	<li><a href="#"><img src="img/1(1).jpg" /></a></li>
+                    	<li><a href="#"><img src="img/1(1).jpg" /></a></li>
+                        <li><a href="#"><img src="img/1(1).jpg" /></a></li>
+                        <li><a href="#"><img src="img/1(1).jpg" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jkgg">
+    	<p class="jkgg_tit">健康游戏公告</p>
+    	<p class="jkhh_con">抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+        <p class="jkhh_con">本游戏适合18周岁以上的成年人用户，未满18周岁的未成年用户请在家长的监督下进行游戏。</p>
+    </div>
+</div>
+<div class="footer">
+	<ul class=" clearfix">
+    	<li><a href="#" class="cylogo"></a></li>
+        <li><a href="#" class="ga"></a></li>
+        <li>
+        	<p>北京畅游时代数码技术有限公司版权所有 COPYRIGHT © 2011 CHANGYOU.COM LIMITED. ALL RIGHTS RESERVED. 法律声明 | 联系我们</p>
+            <p>京网文[2011]0260-093号 | 京ICP证：070525号</p>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

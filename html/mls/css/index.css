@@ -1,0 +1,126 @@
+.header{height: 20px;background-color: #f5f5f5;padding: 10px 0;}
+.container{width: 1200px;margin: 0 auto;}
+.nav-bar li{line-height: 18px;}
+.nav-bar a{height: 18px;padding:0 16px 0 0;border-right: 1px dotted #cccccc;}
+.nav-bar .usual{padding: 2px 16px;}
+.nav-bar .last{border-right: none;margin-left: 16px;}
+.app{width:13px;height:15px;margin:0 3px 0 16px;background: url(../img/mls_global.png)-171px -45px;}
+.order{width:13px;height:15px;margin:0 3px 0 16px;background: url(../img/mls_global.png) -223px -45px;}
+.buycar{width:19px;height:16px;margin:0 3px 0 16px;background: url(../img/mls_global.png) 0 -163px;}
+.qq{width:16px;height:16px;margin:0 3px 0 16px;background: url(../img/mls_global.png) -189px -21px;}
+.hdm{height: 15px;padding: 2px 5px;background: url("../img/hdm_03.jpg") repeat-x;color:#fff;position: relative;}
+.hdm-l{width: 5px;height: 15px;background: url("../img/hdm_01.jpg");position: absolute;left: 0;top:0;}
+.hdm-r{width: 5px;height: 15px;background: url("../img/hdm_05.jpg");position: absolute;right: 0;top:0;}
+.topbar{height: 36px;padding: 15px 0;line-height: 36px;}
+.logo{width: 106px;height: 36px;background: url("../img/logo.png");margin-right: 254px;text-indent: -999em;}
+.searchBox{width: 460px;height: 30px;margin-top:3px;border: 1px solid #ff6699;position: relative;}
+.sel-tit{width: 70px;height: 30px;text-align:center;background-color:#f5f5f5;color:#666666;border-right:1px solid #e6e6e6;position: absolute;left: 0;top:0;z-index: 999;}
+.sj{background: url("../img/mls_global.png") -22px -70px;display:inline-block;width: 5px;height: 3px;}
+.sel-con{width: 70px;height: 80px;position: absolute;left: 0;top:30px;background-color: #ffffff;display: none;}
+.sel-con li{ width:70px;height: 25px;text-align: center;line-height: 25px;}
+.sel:hover .sel-con{display: block;}
+.sel a:hover{display:block;background-color: #f5f5f5;}
+.searchText{width: 300px;height: 30px;}
+.searchBtn{width: 90px;height: 30px;background-color: #ff6699;color: #ffffff;}
+.menu{height:614px;}
+.menu-list {height: 40px;background-color: #ff6699;}
+.menu-list a{float:left;height: 40px;line-height: 40px;color: #fff;font-size: 14px;padding:  0 14px;font-weight: bold;}
+.menu-list a:hover{background-color: #ed3577;}
+.clothes{height: 40px;position: relative;}
+.clothes-tit{position: relative;left: 0;top:0;}
+.clothes-list{width:54px;position: absolute;left: 0;top: 40px;display: none;text-align: center;background-color: #fff;border: 1px solid #ff6699;}
+.clothes:hover .clothes-list{display: block;font-size:12px;font-weight:normal;border-top: none;}
+.clothes:hover .clothes-list a{font-size: 14px;font-weight: normal;color:#ff6699;padding: 0 10px;}
+.menu-list .clothes a:hover{color: #fff;text-align: center;}
+.menu-main{width: 100%;height: 574px;background: url("../img/banner.jpg")no-repeat top center;}
+.submenu-left{width: 198px;height: 572px;border: 1px solid #e6e6e6;padding:0 20px;background-color: #fff;}
+.hot{width: 198px;height: 115px;border-bottom: 1px dotted #e6e6e6;position: relative;}
+.last{border-bottom: none;}
+.hot-tit{width:198px;height:115px;position: absolute;left: 0;top:0;z-index: 999;}
+.hot-icon,.clothes-icon,.shoes-icon,.bag-icon,.peis-icon{width:28px;height: 22px;background: url("../img/wel-icon.png") 0 -45px;margin-right: 3px; }
+.hot-con{width: 360px;height: 400px;background-color: #fff;border:1px solid #e6e6e6;position: absolute;left: 217px;top:-1px;display: none;}
+.hot:hover .hot-con{display: block;}
+.menu-main dt{padding: 13px 0;font-size: 16px;font-weight: bold;color: #ff6699;line-height: 22px;}
+.menu-main dd{float: left;margin:0 10px 8px 0;font-size: 12px;}
+.hot-con1{width:360px;height:100px;padding:15px 20px; }
+.clothes-icon{background-position:0 -45px;}
+.shoes-icon{background-position: 0 -81px;}
+.bag-icon{background-position: 0 -120px;}
+.peis-icon{background-position: 0 -158px;}
+.submenu-right{width: 960px;height:574px; position: relative;}
+.submenu-right1{width: 200px;height: 420px;position: absolute;right: 0;top: 0;}
+.submenu-right1 img{display: block;border-bottom: 1px solid #e6e6e6;}
+.submenu-right2{width:960px;height:144px;position: absolute;left: 10px;bottom: 0;}
+.submenu-right2 img{margin-right: 10px;border: 1px solid #e6e6e6;}
+.recommend{height:814px; }
+.all-tit{height: 22px;padding:20px 0 10px 0;border-bottom: 1px solid #e6e6e6;}
+.recommend-icon{width: 157px;height: 26px;background: url("../img/wel-icon.png")0 0;}
+.recommend-main{height: 752px;}
+.recommend-list{margin-top: 10px;}
+.recommend-item{height: 376px;width: 180px;float: left;margin-right: 24px;}
+.item-last{ margin-right: -24px;}
+.tit1{display: block;width: 180px;height: 24px;margin: 10px 0 20px 0;}
+.price{font-size: 14px; color: #ff6699;font-weight: bold;}
+.spe{color: #999999;margin-left: 5px;text-decoration: line-through;font-size: 10px;}
+.stat{width:180px;padding-top: 5px;border-top: 1px dotted #e6e6e6;margin-top: 10px;}
+.everyday{height: 446px;}
+.everyday-icon{width: 157px;height: 23px;background: url("../img/wel-icon.png") 0 -241px;}
+.new{color: #999;font-size:14px;padding-left: 5px;border-left: 1px dotted #ccc;margin-left: 10px;line-height: 22px;}
+.new b{font-weight: bold;color: #666;padding: 0 3px;}
+.banner{height:100px;background: url("../img/banner2.jpg")}
+.clo{height: 663px;border-bottom: 1px solid #e6e6e6;}
+.clo-icon{width: 78px;height: 22px;background: url("../img/wel-icon.png") 0 -44px;}
+.clo-main{height: 610px;}
+.clo-left{width: 940px;height:610px;border-right: 1px solid #e6e6e6;}
+.clo-list{padding-top: 20px;}
+.clo-item{margin: 0 5px 5px 0;}
+.clo-nav{width:930px;padding: 13px 0 16px 0;}
+.clo-nav-l{width: 309px;height: 44px;border-right: 1px dotted #cccccc;}
+.clo-nav-tit{font-size: 16px;padding: 14px 18px 14px 12px;}
+.clo-nav-con{ margin-right: 11px;padding-top: 5px;}
+.clo-nav-con a{color: #666666;}
+.clo-last{border-right: none;}
+.clo-rank{width:239px;height:590px;padding: 20px 0 0 20px;}
+.clo-rank h3{font-size: 16px; font-weight: bold;}
+.rank-item{height: 34px;padding: 14px 0 14px 0;border-bottom: 1px dotted #ccc;}
+.rank-item img{width: 33px;height: 33px;border: 1px solid #e6e6e6;margin-right: 12px;}
+.shopName{color: #666666;line-height: 22px;}
+.remain{color: #999999;}
+.rank-last{border-bottom: none;}
+.shoe-icon{width: 78px;height: 23px;background: url("../img/wel-icon.png") 0 -82px;}
+.bags-icon{width: 78px;height: 22px;background: url("../img/wel-icon.png") 0 -121px;}
+.peishi-icon{width: 80px;height: 26px;background: url("../img/wel-icon.png") 0 -159px;}
+.magazine{height: 341px;}
+.magazine-icon{width: 116px;height: 21px;background: url("../img/wel-icon.png") 0 -202px;}
+.magazine-nav a{font-size: 14px;padding: 0 14px;border-right: 1px dotted #ccc;}
+.magazine-nav .magazine-last{border-right: none;}
+.magazine-tit{border-bottom: none;}
+.magazine-item{width:200px;height: 257px;border: 1px solid #dddddd;padding: 13px;margin-right: 15px;}
+.tit2{font-size: 14px;font-weight: bold;margin-bottom: 10px;}
+.icon{width: 200px;height: 200px;margin-bottom: 13px;}
+.icon img{margin:0 4px 4px 0;}
+.box{margin-right: -4px;margin-bottom: -4px;}
+.fenx{color: #999;margin-top: 5px;}
+.look{width: 64px;height: 22px;background-color: #ff6699;color: #fff;text-align: center;line-height: 22px;}
+.magazine-item-last{margin-right: -15px;position: relative;}
+.footer{height: 280px;padding-top:30px;border-top: 1px solid #ccc;margin-top: 20px;background-color: #f5f5f5;}
+.foot-con{height: 179px;border-bottom: 1px solid #ccc;}
+.kefu-icon{width: 35px;height: 35px;background: url("../img/mls_global.png") 0 -114px;margin-right: 13px;}
+.kefu .tel{font-size: 16px;font-weight: bold;}
+.kefu p{line-height:28px;color: #666666;font-size: 14px; }
+.kefu-time{margin-left:48px;}
+.kefu{margin-right: 54px;}
+.help,.about-us,.atten-us{margin-right:54px;width: 68px;height: 152px;}
+.footer dt{font-size: 16px;color: #666666;font-weight: bold;margin-bottom: 15px;}
+.footer dd{line-height: 26px;}
+.xl{width: 16px;height: 16px;margin-top:5px;background: url("../img/mls_global.png") 0 -21px;margin-right: 3px;}
+.qq-kong{width: 16px;height: 16px;margin-top:5px;background: url("../img/mls_global.png") -73px -21px;margin-right: 3px;}
+.tengxun{width: 16px;height: 16px;margin-top:5px;background: url("../img/mls_global.png") -49px -21px;margin-right: 3px;}
+.wx-code-con img{width: 115px;height: 115px;margin-top: 5px;}
+.app-down-con{width: 131px;height: 98px;background: url("../img/mls_global.png") 0 -401px;}
+.foot-link{height:12px ;padding: 9px 10px;border-bottom: 1px solid #ccc;}
+.foot-link li{float: left;margin-right: 20px;color: #666666;}
+.foot-link a,.foot-copy a{color: #666;}
+.foot-link a:hover,.foot-copy a:hover{color: #ed3577;}
+.foot-link .link-last{float: right;margin-right: 0;display: inline;}
+.foot-copy{color: #666;margin-top: 10px;line-height:22px; }
